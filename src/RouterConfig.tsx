@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Experience from "./pages/experience/experience";
@@ -12,38 +12,18 @@ import PacManGame from "./components/PacManGame/PacManGame";
 
 const RouterConfig = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/about">
-        <About />
-      </Route>
-      <Route exact path="/experience">
-        <Experience />
-      </Route>
-      <Route exact path="/portfolio">
-        <Portfolio />
-      </Route>
-      <Route exact path="/contact">
-        <Contact />
-      </Route>
-      <Route exact path="/project">
-        <Project />
-      </Route>
-      <Route exact path="/snakegame">
-        <SnakeGame />
-      </Route>
-      <Route exact path="/tetrisgame">
-        <TetrisGame />
-      </Route>
-      <Route exact path="/pacmangame">
-        <PacManGame />
-      </Route>
-      <Route>
-        <Error />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/project" element={<Project />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/snakegame" element={<SnakeGame />} />
+      <Route path="/tetrisgame" element={<TetrisGame />} />
+      <Route path="/pacmangame" element={<PacManGame />} />
+      <Route path="*" element={<Error />} />
+    </Routes>
   );
 };
 

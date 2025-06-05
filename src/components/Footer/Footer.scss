@@ -1,7 +1,8 @@
+@use "sass:math";
 $footer-color: #668F80;
 $footer-height: 40px;
 $icons-size: 25px;
-$icon-margin-top: calc(($footer-height-$icons-size)/2);
+$icon-margin-top: math.div($footer-height - $icons-size, 2);
 
 .footer-div {
     z-index: 2;

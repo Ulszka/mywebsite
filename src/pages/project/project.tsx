@@ -7,7 +7,8 @@ import git from "../../assets/my_projects/git.png";
 import "./project.scss";
 
 const Project = () => {
-  const indexParam: number = useLocation<number>().state;
+  const location = useLocation();
+  const indexParam = typeof location.state === "number" ? location.state : 0;
   const [index, setIndex] = useState<number>(indexParam);
 
   function getNextProject() {
@@ -31,10 +32,7 @@ const Project = () => {
       <h3 className="project-title">{projects[index].projectTitle}</h3>
       <hr />
       <div className="project-content-container">
-        <img
-          src={projects[index].projectImage}
-          alt="project"
-        />
+        <img src={projects[index].projectImage} alt="project" />
         <div className="project-content-text">
           <div className="project-technologies">
             {projects[index].projectTechnologies.map((technology) => (
@@ -44,31 +42,25 @@ const Project = () => {
           <p className="project-description">
             {projects[index].projectDescription}
           </p>
-          <a
-            href={projects[index].projectUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="project-repository-button"
-          >
-                    {projects[index].isExternal ? (
-          <a
-            href={projects[index].projectUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="project-repository-button"
-          >
-            <button>{projects[index].buttonText}</button>
-          </a>
-        ) : (
+          {projects[index].isExternal ? (
+            <a
+              href={projects[index].projectUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="project-repository-button"
+            >
+              <button>{projects[index].buttonText}</button>
+            </a>
+          ) : (
             <NavLink
               to={{
-                pathname: projects[index].projectUrl
+                pathname: projects[index].projectUrl,
               }}
+              className="project-repository-button"
             >
               <button>{projects[index].buttonText}</button>
             </NavLink>
-        )}
-          </a>
+          )}
         </div>
       </div>
     </div>

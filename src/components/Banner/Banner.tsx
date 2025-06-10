@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ukulele from "../../assets/my_pictures/chosen/ukulele_3.webp";
 import happy from "../../assets/my_pictures/chosen/happy_1.webp";
 import mountain from "../../assets/my_pictures/chosen/mountain_1.webp";
@@ -17,6 +17,13 @@ const Banner = () => {
     "project turns out to be bigger than expected",
     "the project ends and the ride begins.",
   ];
+
+  useEffect(() => {
+    pictures.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, [pictures]);
 
   const [index, setIndex] = useState<number>(0);
 

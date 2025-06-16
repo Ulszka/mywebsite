@@ -1,61 +1,170 @@
-$boxes-color: #1a1a1a;
-$text-color: #36383E;
-$button-text-color: #fff;
-
-.home-div {
-    width: 100%;
-
-    .canvas-absolute {
-        z-index: 1;
-        margin-bottom: 40px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: calc(100vh - 90px);
-    }
-    
-    .welcome-div {
-        position: absolute;
-        top: 25%;
-        z-index: 2;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;    
-        color: $text-color;
-        padding: 10px 15px;
-        background-color: rgba(238, 231, 225, 0.35);
-    
-        h4 {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-    }
-    .cv-button {
-        width: 180px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        border-radius: 8px;
-        background-color: $boxes-color;
-        color: $button-text-color;
-        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-        transition: transform 0.3s;
-        &:hover {
-            transform: scale(1.05);
-        }
-
-
-        .download-icon {
-            padding-left: 10px;
-        }
-    }
+.home-key-points {
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  color: #dde9e3;
+  font-size: 1.05rem;
+  font-weight: 400;
+  list-style: disc inside;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  letter-spacing: 0.01em;
+}
+.home-bg {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
+.home-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(21, 71, 52, 0.8) 70%,
+    rgba(21, 71, 52, 0.0) 100%
+  );
+  min-height: 100vh;
+  width: 50vw;
+  min-width: 350px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
+.home-content {
+  color: #fff;
+  margin-left: 6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  letter-spacing: -1px;
+}
+
+.wave {
+  font-size: 2.2rem;
+  animation: wave 2s infinite;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(14deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(10deg); }
+  70% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.home-content p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0;
+  max-width: 380px;
+  line-height: 1.5;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.cv-btn,
+.story-btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cv-btn {
+  background: #fff;
+  color: #154734;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
+}
+
+.cv-btn:hover {
+  background: #dde9e3;
+}
+
+.story-btn {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+  font-weight: 500;
+}
+
+.story-btn:hover {
+  background: #27644c;
+  border-color: #dde9e3;
+  color: #dde9e3;
+}
+
+@media (max-width: 900px) {
+  .home-overlay {
+    width: 70vw;
+    min-width: unset;
+    max-width: unset;
+  }
+  .home-content {
+    margin-left: 2vw;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-bg {
+    align-items: flex-start;
+    background-position: 61% 50px;
+  }
+  .home-overlay {
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+  .home-content {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    gap: 1.1rem;
+  }
+  .home-buttons {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+  .home-content h1 {
+    padding-top: 32px;
+  }
+}
 

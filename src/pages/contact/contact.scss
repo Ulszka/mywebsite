@@ -3,6 +3,10 @@ $padding-sides: 100px;
 $padding-sides-mobile: 20px;
 
 .contact-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @media (max-width: 648px) {
         padding: 70px $padding-sides-mobile;
     }
@@ -19,6 +23,10 @@ $padding-sides-mobile: 20px;
         margin-top: 1em;
     }
 
+    hr {
+      width: 100%;
+    }
+
     .bold-600 {
         font-weight: 600;
     }
@@ -32,4 +40,54 @@ $padding-sides-mobile: 20px;
     .contact-messenger {
         color: #00C6FF;
     }
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 2.5rem;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.contact-photo {
+  width: 600px;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 15%;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  margin-top: 2rem;
+  position: static;
+  align-self: center;
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    align-self: center;
+  }
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-info li {
+  margin-bottom: 0.7em;
+}
+
+.contact-info i {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  vertical-align: middle;
 }

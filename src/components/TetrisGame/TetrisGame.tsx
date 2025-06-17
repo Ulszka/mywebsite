@@ -81,7 +81,10 @@ const Tetris: React.FC = () => {
   const [board, setBoard] = useState<number[][]>(createBoard());
   const [currentPiece, setCurrentPiece] = useState<Tetromino>(randomTetromino());
   const [gameOver, setGameOver] = useState<boolean>(false);
+  const [score, setScore] = useState<number>(0);
+  const [timer, setTimer] = useState<number>(0);
   const dropInterval = useRef<number | null>(null);
+  const timerInterval = useRef<number | null>(null);
 
   // Checks if a given piece would collide with fixed blocks or board boundaries after an offset move.
   const checkCollision = useCallback((piece: Tetromino, offsetX: number, offsetY: number): boolean => {
@@ -109,27 +112,40 @@ const Tetris: React.FC = () => {
   const mergePiece = useCallback(() => {
     const newBoard = board.map(row => [...row]);
     const shape = getPieceShape(currentPiece);
+    let gameOverFlag = false;
     for (let y = 0; y < shape.length; y++) {
       for (let x = 0; x < shape[y].length; x++) {
         if (shape[y][x] !== 0) {
-          if (currentPiece.pos.y + y < 0) {
+          const boardY = currentPiece.pos.y + y;
+          const boardX = currentPiece.pos.x + x;
+          if (boardY < 0) {
             // Game over condition if part of the piece is above the board
             setGameOver(true);
             return;
           }
-          newBoard[currentPiece.pos.y + y][currentPiece.pos.x + x] = 1;
+          newBoard[boardY][boardX] = 1;
         }
       }
+    }
+    // Check for game over: if any cell in the top row is filled after merging
+    if (newBoard[0].some(cell => cell !== 0)) {
+      setBoard(newBoard);
+      setGameOver(true);
+      return;
     }
     setBoard(clearLines(newBoard));
     setCurrentPiece(randomTetromino());
   }, [board, currentPiece]);
 
-  // Clears completed lines from the board.
+  // Clears completed lines from the board and updates score.
   const clearLines = (board: number[][]): number[][] => {
     const newBoard = board.filter(row => row.some(cell => cell === 0));
     const clearedLines = ROWS - newBoard.length;
-    // Add new empty rows at the top for the cleared lines
+    if (clearedLines > 0) {
+      // Scoring: 1 line = 100, 2 lines = 300, 3 lines = 500, 4 lines = 800
+      const lineScores = [0, 100, 300, 500, 800];
+      setScore(prev => prev + lineScores[clearedLines] || (clearedLines * 100));
+    }
     for (let i = 0; i < clearedLines; i++) {
       newBoard.unshift(Array(COLS).fill(0));
     }
@@ -172,6 +188,16 @@ const Tetris: React.FC = () => {
     if (gameOver) return;
     switch (e.code) {
       case 'ArrowLeft':
+      case 'ArrowRight':
+      case 'ArrowDown':
+      case 'ArrowUp':
+        e.preventDefault(); // Prevent page scroll
+        break;
+      default:
+        break;
+    }
+    switch (e.code) {
+      case 'ArrowLeft':
         movePiece(-1);
         break;
       case 'ArrowRight':
@@ -193,12 +219,31 @@ const Tetris: React.FC = () => {
     dropInterval.current = window.setInterval(() => {
       drop();
     }, 1000);
-
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
       if (dropInterval.current) window.clearInterval(dropInterval.current);
     };
   }, [drop]);
+
+  // Timer interval only depends on gameOver
+  useEffect(() => {
+    if (!gameOver) {
+      timerInterval.current = window.setInterval(() => {
+        setTimer(prev => prev + 1);
+      }, 1000);
+    }
+    return () => {
+      if (timerInterval.current) window.clearInterval(timerInterval.current);
+    };
+  }, [gameOver]);
+
+  // Reset timer and score on restart
+  useEffect(() => {
+    if (!gameOver && timer !== 0) {
+      setTimer(0);
+      setScore(0);
+    }
+  }, [gameOver]);
 
   // Renders the board and overlays the current falling piece.
   const renderBoard = () => {
@@ -233,19 +278,35 @@ const Tetris: React.FC = () => {
       {gameOver ? (
         <div className="game-over">
           <h2>Game Over</h2>
+          <div className="score-timer">
+            <div>Score: {score}</div>
+            <div>Time: {timer}s</div>
+          </div>
           <button onClick={() => {
             setBoard(createBoard());
             setCurrentPiece(randomTetromino());
             setGameOver(false);
+            setScore(0);
+            setTimer(0);
           }}>Restart</button>
         </div>
       ) : (
         <>
+          <div className="score-timer">
+            <div>Score: {score}</div>
+            <div>Time: {timer}s</div>
+          </div>
           <div className="board" style={{ width: COLS * BLOCK_SIZE, height: ROWS * BLOCK_SIZE }}>
             {renderBoard()}
           </div>
           <div className="instructions">
             <p>Use the arrow keys to move and rotate the piece.</p>
+            <div className="legend">
+              <div><b>←</b> Move Left</div>
+              <div><b>→</b> Move Right</div>
+              <div><b>↓</b> Move Down (Drop faster)</div>
+              <div><b>↑</b> Rotate</div>
+            </div>
           </div>
         </>
       )}

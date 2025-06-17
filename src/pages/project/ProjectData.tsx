@@ -100,7 +100,12 @@ const tetrisTitle = "Tetris";
 
 const tetrisTechnologies = ["React", "TypeScript", "SCSS"];
 
-const tetrisDescription = `Still under construction, please wait a little more :)`;
+const tetrisDescription = `Building this Tetris game was both a technical and creative challenge. I used 
+TypeScript and SCSS to replicate the core gameplay: falling tetrominoes, line clearing, scoring, and increasing 
+difficulty. I focused on precise timing and grid-based logic, while keeping the codebase clean and modular. 
+AI-assisted tools helped speed up routine coding, but the game design, logic, and visual polish were entirely 
+my own. It was a deep dive into algorithmic thinking, collision detection, and UI responsiveness—all under 
+a tight self-imposed deadline.`;
 
 const tetrisUrl = "/tetrisgame";
 

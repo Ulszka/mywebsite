@@ -13,6 +13,18 @@ $cell-size: 25px;
   background-color: #222;
   min-height: 100vh;
   padding: 20px;
+  margin-top: 50px;
+
+  .score-timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
 
   .board {
     position: relative;
@@ -44,6 +56,20 @@ $cell-size: 25px;
   .instructions {
     margin-top: 15px;
     font-size: 14px;
+
+    .legend {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 15px;
+      }
+    }
   }
 
   .game-over {

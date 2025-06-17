@@ -96,12 +96,12 @@ const Experience = () => {
       <br />
       <h5>Project Coordinator in Colliers Define 07/2022 - now </h5>
       <p>
-        As a Project Coordinator, I was responsible for overseeing and coordinating project
-        teams to ensure smooth execution. My role involved tracking budgets, managing scope
-        changes, and supervising ongoing tasks and deliverables. I also handled contract
+        As a Project Coordinator, I am responsible for overseeing and coordinating project
+        teams to ensure smooth execution. My role involves tracking budgets, managing scope
+        changes, and supervising ongoing tasks and deliverables. I also handle contract
         adherence, invoicing, and payment processes while maintaining comprehensive project
-        documentation. Additionally, I worked closely with clients to define project
-        requirements and actively participated in contract negotiations.
+        documentation. Additionally, I work closely with clients to define project
+        requirements and actively participate in contract negotiations.
       </p>
       <div className="jobskills">
         <ul>
@@ -181,10 +181,6 @@ const Experience = () => {
         and reporting. Moreover, I expanded my analytical capabilities through MATLAB, which I used to
         refine processes and drive data-based decision-making.
       </p>
-
-
-
-
     </div>
   );
 };

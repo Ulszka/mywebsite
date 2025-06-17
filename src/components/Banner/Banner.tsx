@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import ukulele from "../../assets/my_pictures/chosen/ukulele_3.webp";
+import waterfall from "../../assets/my_pictures/chosen/waterfall.jpg";
 import happy from "../../assets/my_pictures/chosen/happy_1.webp";
 import mountain from "../../assets/my_pictures/chosen/mountain_1.webp";
 import angry from "../../assets/my_pictures/chosen/angry_1.webp";
@@ -8,14 +8,14 @@ import motorcycle from "../../assets/my_pictures/chosen/motorcycle_1.webp";
 import "./Banner.scss";
 
 const Banner = () => {
-  const pictures: string[] = [ukulele, happy, mountain, angry, lighthouse, motorcycle];
+  const pictures: string[] = [waterfall, happy, mountain, angry, lighthouse, motorcycle];
   const traits: string[] = [
     "project hasn't started yet",
     "new project starts",
     "difficulties show up",
     "work doesn't get done",
     "project turns out to be bigger than expected",
-    "the project ends and the ride begins.",
+    "the project ends and the ride begins",
   ];
 
   useEffect(() => {

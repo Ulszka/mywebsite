@@ -23,10 +23,6 @@ $padding-sides-mobile: 20px;
         margin-top: 1em;
     }
 
-    hr {
-      width: 100%;
-    }
-
     .bold-600 {
         font-weight: 600;
     }
@@ -74,7 +70,9 @@ $padding-sides-mobile: 20px;
 }
 
 .contact-info {
+  width: 100%;
   flex: 1;
+  text-align: center;
 }
 
 .contact-info ul {

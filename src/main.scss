@@ -46,3 +46,11 @@ p {
 ul {
   font-size: 20px;
 }
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 2px solid;
+  display: block;
+  box-sizing: border-box;
+}

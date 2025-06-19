@@ -7,10 +7,7 @@ const Contact = () => {
     <div className="contact-div">
       <div className="contact-info">
         <h3 className="contact-title">Contact me</h3>
-      </div>
       <hr />
-      <div className="contact-info">
-
         <p>
           Feel free to contact me anytime if you have any questions. You can
           reach out to me on:

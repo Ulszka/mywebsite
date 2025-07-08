@@ -141,7 +141,7 @@ const PacMan: ProjectData = {
 // Colliers
 const colliersTitle = "Colliers";
 
-const colliersTechnologies = ["Scrum", "Agile"];
+const colliersTechnologies = ["Scrum", "Agile", "Power-BI", "MS Project", "MS Excel"];
 
 const colliersDescription = `My project management experience comes from leading large-scale construction 
 and real estate projects, where I delivered complex fit-outs under tight deadlines. I was responsible for 

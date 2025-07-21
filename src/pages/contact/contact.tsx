@@ -15,7 +15,7 @@ const Contact = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/urszula-handzlik/"
+              href="https://www.linkedin.com/in/ulszka/"
               className="contact-linkedin bold-600"
               target="_blank"
               rel="noreferrer"

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer-div">
       <a
-        href="https://www.linkedin.com/in/urszula-handzlik/"
+        href="https://www.linkedin.com/in/ulszka/"
         target="_blank"
         rel="noreferrer"
       >

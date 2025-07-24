@@ -28,16 +28,20 @@ const Experience = () => {
       <img src={freelancing} alt="Freelancing" className="company-img" />
       <h5>Project Manager Freelancing 04/2022 - now</h5>
       <p>
-        As a Freelance IT Project Manager, I specialize in overseeing the early planning and execution of various
-        technology projects, ensuring seamless progress from initiation to completion. I take an active role
-        in coordinating cross-functional teams, fostering effective collaboration, and maintaining clear communication
-        to align with project objectives. Additionally, I manage project workflows, monitor timelines and deliverables,
-        and optimize resource allocation to drive successful outcomes in dynamic IT environments.
+        As a Freelance IT Project Manager, I specialize in overseeing the early planning and execution of various 
+        technology projects, ensuring seamless progress from initiation to completion. I take an active role in 
+        coordinating cross-functional teams, fostering effective collaboration, and maintaining clear communication 
+        to align with project objectives. Additionally, I manage project workflows and optimize resource allocation 
+        while keeping timelines and deliverables on track to ensure successful outcomes in dynamic IT environments. 
+        I’ve also used AI agents to support web development tasks—leveraging them for coding assistance and 
+        accelerating technical implementation where needed.
       </p>
       <div className="jobskills">
         <ul>
           <li>Scrum</li>
           <li>Agile</li>
+          <li>Agent AI</li>
+          <li>Copilot</li>
           <li>Organizational skills</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>
@@ -107,6 +111,7 @@ const Experience = () => {
         <ul>
           <li>Scrum</li>
           <li>Python</li>
+          <li>Copilot</li>
           <li>Organizational skills</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>

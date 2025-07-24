@@ -141,14 +141,15 @@ const PacMan: ProjectData = {
 // Colliers
 const colliersTitle = "Colliers";
 
-const colliersTechnologies = ["Scrum", "Agile", "Power-BI", "MS Project", "MS Excel"];
+const colliersTechnologies = ["Scrum", "Agile", "Power-BI", "MS Project", "MS Excel", "Copilot"];
 
 const colliersDescription = `My project management experience comes from leading large-scale construction 
-and real estate projects, where I delivered complex fit-outs under tight deadlines. I was responsible for 
-managing timelines, coordinating contractors, and keeping things moving—often while handling shifting requirements 
-and on-the-spot challenges. Working with cross-functional teams, I learned how to keep projects on track, 
-communicate clearly with stakeholders, and make quick decisions under pressure. I now apply those same skills 
-in IT project management, where managing complexity, risk, and momentum is just as critical.`;
+and real estate projects, where I deliver complex fit-outs under tight deadlines. I am responsible for 
+managing timelines, coordinating contractors, and keeping things moving—often while handling shifting 
+requirements and on-the-spot challenges. Working with cross-functional teams, I learned how to keep projects 
+on track, communicate clearly with stakeholders, and make quick decisions under pressure. I apply those same 
+skills in IT project management, where managing complexity, risk, and momentum is just as critical—while also 
+streamlining processes using tools like Copilot to boost efficiency and support decision-making.`;
 
 const colliersUrl =
   "https://define.colliers.pl/pl/portfolio/premier-farnell/";

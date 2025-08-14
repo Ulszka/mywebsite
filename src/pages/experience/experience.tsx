@@ -17,6 +17,9 @@ import matlab from "../../assets/experience/technologies/matlab.png";
 import powerbi from "../../assets/experience/technologies/powerbi.png";
 import agile from "../../assets/experience/technologies/agile.png";
 import waterfall from "../../assets/experience/technologies/waterfall.png";
+import jira from "../../assets/experience/technologies/jira.jfif";
+import confluence from "../../assets/experience/technologies/confluence.jfif";
+import sharepoint from "../../assets/experience/technologies/sharepoint.png";
 
 
 
@@ -42,6 +45,8 @@ const Experience = () => {
           <li>Agile</li>
           <li>Agent AI</li>
           <li>Copilot</li>
+          <li>Jira</li>
+          <li>Confluence</li>
           <li>Organizational skills</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>
@@ -57,6 +62,8 @@ const Experience = () => {
         <div className="job-skills-images">
           <img src={scrum} alt="SCRUM" />
           <img src={agile} alt="Agile" />
+          <img src={jira} alt="Jira" />
+          <img src={confluence} alt="Confluence" />
           <img src={react} alt="react" />
           <img src={python} alt="Python" />
           <img src={typescript} alt="TypeScript" />
@@ -112,6 +119,7 @@ const Experience = () => {
           <li>Scrum</li>
           <li>Python</li>
           <li>Copilot</li>
+          <li>SharePoint</li>
           <li>Organizational skills</li>
           <li>Logical thinking</li>
           <li>Responsibility</li>
@@ -124,6 +132,7 @@ const Experience = () => {
         <div className="job-skills-images">
           <img src={scrum} alt="SCRUM" />
           <img src={python} alt="Python" />
+          <img src={sharepoint} alt="SharePoint" />
           <img src={powerbi} alt="Power BI" />
           <img src={msproject} alt="MS Project" />
           <img src={html} alt="HTML" />

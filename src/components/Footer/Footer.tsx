@@ -10,11 +10,12 @@ const Footer = () => {
       >
         <i className="fab fa-linkedin footer-icon"></i>
       </a>
-      {/* 
-      <a href="https://m.me/ula.handzlik" target="_blank" rel="noreferrer">
+      <a href="https://wa.me/48515052579" 
+      target="_blank" 
+      rel="noreferrer"
+      >
         <i className="fab fa-whatsapp-square footer-icon"></i>
       </a>
-      */}
       <a
         href="https://m.me/ula.handzlik"
         target="_blank"

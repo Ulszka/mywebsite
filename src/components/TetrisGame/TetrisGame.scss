@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $tetris-bg: #111;
 $tetris-border: #333;
 $cell-fixed: #888;
@@ -88,8 +90,7 @@ $cell-size: 25px;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: darken($cell-active, 10%);
-      }
+        background-color: color.adjust($cell-active, $lightness: -10%);      }
     }
   }
 }

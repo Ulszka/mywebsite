@@ -62,13 +62,13 @@ $image-width: 600px;
     }
 
     .project-content-text {
-      @media (min-width: 649px) {
-        padding-left: 40px;
-      }
-
       display: flex;
       flex-direction: column;
 
+      @media (min-width: 649px) {
+        padding-left: 40px;
+      }
+    
       .project-technologies {
         display: flex;
         flex-direction: row;

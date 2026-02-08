@@ -3,6 +3,7 @@ import "./experience.scss";
 import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing_women.png";
+import fedex from "../../assets/experience/fedex_logo.png";
 // Technologies images
 import python from "../../assets/experience/technologies/python.png";
 import typescript from "../../assets/experience/technologies/typescript.png";
@@ -20,7 +21,7 @@ import waterfall from "../../assets/experience/technologies/waterfall.png";
 import jira from "../../assets/experience/technologies/jira.jfif";
 import confluence from "../../assets/experience/technologies/confluence.jfif";
 import sharepoint from "../../assets/experience/technologies/sharepoint.png";
-
+import copilot from "../../assets/experience/technologies/copilot.jpg";
 
 
 const Experience = () => {
@@ -28,15 +29,55 @@ const Experience = () => {
     <div className="experience-div">
       <h3 className="experience-title">My experience</h3>
       <hr />
-      <img src={freelancing} alt="Freelancing" className="company-img" />
-      <h5>Project Manager Freelancing 04/2022 - now</h5>
+
+      <img src={fedex} alt="FedEx" className="company-img" />
+      <h5>Project Lead in FedEx 02/2026 - now</h5>
       <p>
-        As a Freelance IT Project Manager, I specialize in overseeing the early planning and execution of various 
-        technology projects, ensuring seamless progress from initiation to completion. I take an active role in 
+        As a Project Lead, I specialize in guiding complex, multi-component projects from initial assessment to successful 
+        delivery. I collaborate closely with cross-functional teams—including Operations, Customer Experience, Pricing, 
+        Customs, IT, and Sales—to clarify project scope, align objectives, and ensure seamless execution. By analyzing 
+        customer needs and identifying gaps, I help design efficient, cost-effective solutions that meet business goals.
+      </p>
+      <div className="jobskills">
+        <ul>
+          <li>Copilot</li>
+          <li>SharePoint</li>
+          <li>Power-BI</li> 
+          <li>Organizational skills</li>
+          <li>Logical thinking</li>
+          <li>Responsibility</li>
+          <li>Timeliness</li>
+          <li>Quick learner</li>
+          <li>Creativity</li>
+        </ul>
+        <div className="job-skills-images">
+          <img src={copilot} alt="Copilot" />
+          <img src={sharepoint} alt="SharePoint" />
+          <img src={powerbi} alt="Power BI" />
+        </div>
+      </div>
+      <p>
+        Throughout each project, I act as a trusted consultant to Sales and internal stakeholders, providing insights,
+         framing solutions, and applying project management tools to track and control all stages. I also lead project 
+         close-out reviews to capture lessons learned and drive continuous improvement.
+
+        {/* In my career, I’ve led diverse, cross-functional projects where I identified challenges, developed 
+        innovative solutions, and ensured timely execution. I combine strong analytical skills, business acumen, 
+        and adaptability to navigate changing priorities while delivering high-quality results that align with customer 
+        and organizational objectives. */}
+      </p>
+      <hr className="experience-spacer" />
+      <br />
+
+      <img src={freelancing} alt="Freelancing" className="company-img" />
+      <h5>IT Project Manager 04/2022 - 02/2026</h5>
+      <p>
+        As a Freelance IT Project Manager, I specialized in overseeing the early planning and execution of various 
+        technology projects, ensuring seamless progress from initiation to completion. I took an active role in 
         coordinating cross-functional teams, fostering effective collaboration, and maintaining clear communication 
-        to align with project objectives. Additionally, I manage project workflows and optimize resource allocation 
+        to align with project objectives. Additionally, I managed project workflows and optimized resource allocation 
         while keeping timelines and deliverables on track to ensure successful outcomes in dynamic IT environments. 
-        I’ve also used AI agents to support web development tasks—leveraging them for coding assistance and 
+        I’ve also used AI agents to support web development tasks — leveraging them for coding assistance and 
         accelerating technical implementation where needed.
       </p>
       <div className="jobskills">
@@ -62,6 +103,7 @@ const Experience = () => {
         <div className="job-skills-images">
           <img src={scrum} alt="SCRUM" />
           <img src={agile} alt="Agile" />
+          <img src={copilot} alt="Copilot" />
           <img src={jira} alt="Jira" />
           <img src={confluence} alt="Confluence" />
           <img src={react} alt="react" />
@@ -105,14 +147,14 @@ const Experience = () => {
       <img src={colliers} alt="Colliers Define" className="company-img" />
       <br />
       <br />
-      <h5>Project Coordinator in Colliers Define 07/2022 - now </h5>
+      <h5>Project Coordinator in Colliers Define 07/2022 - 01/2026 </h5>
       <p>
-        As a Project Coordinator, I am responsible for overseeing and coordinating project
-        teams to ensure smooth execution. My role involves tracking budgets, managing scope
-        changes, and supervising ongoing tasks and deliverables. I also handle contract
+        As a Project Coordinator, I was responsible for overseeing and coordinating project
+        teams to ensure smooth execution. My role involved tracking budgets, managing scope
+        changes, and supervising ongoing tasks and deliverables. I also handled contract
         adherence, invoicing, and payment processes while maintaining comprehensive project
-        documentation. Additionally, I work closely with clients to define project
-        requirements and actively participate in contract negotiations.
+        documentation. Additionally, I worked closely with clients to define project
+        requirements and actively participated in contract negotiations.
       </p>
       <div className="jobskills">
         <ul>
@@ -132,6 +174,7 @@ const Experience = () => {
         <div className="job-skills-images">
           <img src={scrum} alt="SCRUM" />
           <img src={python} alt="Python" />
+          <img src={copilot} alt="Copilot" />
           <img src={sharepoint} alt="SharePoint" />
           <img src={powerbi} alt="Power BI" />
           <img src={msproject} alt="MS Project" />
@@ -140,14 +183,14 @@ const Experience = () => {
       </div>
 
       <p>
-        Colliers Define is an exciting place to work, offering a dynamic environment
+        Colliers Define was an exciting place to work, offering a dynamic environment
         that blends strategic project management with real-world execution. Managing
-        projects here requires adaptability, as each initiative comes with unique
+        projects here required adaptability, as each initiative came with unique
         challenges in budgeting, scheduling, and workflow optimization. The role
-        demands a deep understanding of risk management and contract administration
+        demanded a deep understanding of risk management and contract administration
         to ensure smooth project delivery. With multiple teams and vendors involved,
-        strong communication and problem-solving skills are essential to keep projects
-        on track. The fast-paced nature of the work constantly pushes project coordinators
+        strong communication and problem-solving skills were essential to keep projects
+        on track. The fast-paced nature of the work constantly pushed project coordinators
         to refine their skills and stay ahead in the field of project management.
       </p>
       <hr className="experience-spacer" />

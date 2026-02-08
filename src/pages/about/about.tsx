@@ -8,6 +8,7 @@ import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing_women.png";
 import vlo from "../../assets/experience/v_logo.png";
+import fedex from "../../assets/experience/fedex_logo.png";
 
 const About = () => {
   const experienceSectionId = "experience-div";
@@ -83,10 +84,22 @@ const About = () => {
         <hr />
         <br />
         <div className="experience-jobs">
+
+        <div className="experience-job">
+            <img src={fedex} alt="FedEx" className="company-img" />
+            <h5>FedEx 02/2026 - now</h5>
+            <h6>Project Lead</h6>
+            <ul>
+              <li>Design efficient, cost-effective solutions tailored to customer needs</li>
+              <li>Use project management tools to plan, track, and control project phases</li>
+              <li>Collaborate with cross-functional teams to align on project scope</li>
+            </ul>
+          </div>
+
           <div className="experience-job">
             <img src={freelancing} alt="Freelancing" className="company-img" />
-            <h5>Freelancing 04/2022 - now</h5>
-            <h6>Project Manager</h6>
+            <h5>Freelancing 04/2022 - 02/2026</h5>
+            <h6>IT Project Manager</h6>
             <ul>
               <li>Planning and overseeing IT project execution (f.e.
                 <a
@@ -108,7 +121,7 @@ const About = () => {
           <div className="experience-job">
             <img src={colliers} alt="Colliers Define" className="company-img" />
             <br />
-            <h5>Colliers Define 07/2022 - now</h5>
+            <h5>Colliers Define 07/2022 - 01/2026</h5>
             <h6>Project Coordinator</h6>
             <ul>
               <li>Supervision, verification and coordination of the works carried out (f.e.
@@ -127,7 +140,7 @@ const About = () => {
               <li>Overseeing and validating ongoing tasks and deliverables</li>
             </ul>
           </div>
-          <div className="experience-job">
+          {/* <div className="experience-job">
             <img src={twojDev} alt="Twój developer" className="company-img" />
             <h5>Twój developer 07/2020 - 08/2021</h5>
             <h6>Project Manager Assistant</h6>
@@ -147,7 +160,7 @@ const About = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
         </div>
       </div>

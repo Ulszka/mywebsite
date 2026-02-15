@@ -88,7 +88,7 @@ const About = () => {
         <div className="experience-job">
             <img src={fedex} alt="FedEx" className="company-img" />
             <h5>FedEx 02/2026 - now</h5>
-            <h6>Project Lead</h6>
+            <h6>Project Lead / Solution Design and Implementation Specialist</h6>
             <ul>
               <li>Design efficient, cost-effective solutions tailored to customer needs</li>
               <li>Use project management tools to plan, track, and control project phases</li>

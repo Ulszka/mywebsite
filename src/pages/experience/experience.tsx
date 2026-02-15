@@ -22,6 +22,8 @@ import jira from "../../assets/experience/technologies/jira.jfif";
 import confluence from "../../assets/experience/technologies/confluence.jfif";
 import sharepoint from "../../assets/experience/technologies/sharepoint.png";
 import copilot from "../../assets/experience/technologies/copilot.jpg";
+import QDM from "../../assets/experience/technologies/QDM.png";
+
 
 
 const Experience = () => {
@@ -31,7 +33,7 @@ const Experience = () => {
       <hr />
 
       <img src={fedex} alt="FedEx" className="company-img" />
-      <h5>Project Lead in FedEx 02/2026 - now</h5>
+      <h5>Project Lead / Solution Design and Implementation Specialist in FedEx 02/2026 - now</h5>
       <p>
         As a Project Lead, I specialize in guiding complex, multi-component projects from initial assessment to successful 
         delivery. I collaborate closely with cross-functional teams—including Operations, Customer Experience, Pricing, 
@@ -40,6 +42,8 @@ const Experience = () => {
       </p>
       <div className="jobskills">
         <ul>
+          <li>Bubble</li>
+          <li>Quality Driven Management</li>
           <li>Copilot</li>
           <li>SharePoint</li>
           <li>Power-BI</li> 
@@ -51,6 +55,7 @@ const Experience = () => {
           <li>Creativity</li>
         </ul>
         <div className="job-skills-images">
+          <img src={QDM} alt="QDM" />
           <img src={copilot} alt="Copilot" />
           <img src={sharepoint} alt="SharePoint" />
           <img src={powerbi} alt="Power BI" />

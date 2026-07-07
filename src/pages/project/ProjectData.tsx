@@ -23,7 +23,7 @@ const websiteTitle = "This website";
 
 const websiteTechnologies = ["React", "TypeScript", "SCSS", "git", "CI/CD"];
 
-const websiteDescription = `If you’re here, you’re already checking out one of my personal projects—my website, 
+const websiteDescription = `If you’re here, you’re already checking out one of my personal projects - my website, 
 built for fun and to learn new skills. I designed and implemented every visual and interactive element while 
 collaborating with a software developer I had worked with in the past, who built the skeleton of the web app 
 and set up the DevOps pipeline for continuous deployment. I also came up with and built three small browser games, 
@@ -74,10 +74,10 @@ const snakeTitle = "Snake";
 
 const snakeTechnologies = ["React", "TypeScript", "SCSS"];
 
-const snakeDescription = `If you’re checking out my site, you’ll find the Snake game I built—purely for fun 
-and to sharpen skills. Using TypeScript (TSX) and SCSS, I recreated the core mechanics of the 
+const snakeDescription = `If you’re checking out my site, you’ll find the Snake game I built-purely for fun 
+and to sharpen skills. Using TypeScript and SCSS, I recreated the core mechanics of the 
 classic: smooth movement, growing tail, and collision detection. I leaned on AI-assisted coding tools to 
-accelerate development, but I made every architectural decision—identifying which gameplay elements were 
+accelerate development, but I made every architectural decision - identifying which gameplay elements were 
 essential and which I could trim to hit my deadline. The result is a lean, responsive Snake clone that 
 taught me a ton about state management, styling with SCSS, and balancing feature scope under time constraints.`;
 
@@ -104,7 +104,7 @@ const tetrisDescription = `Building this Tetris game was both a technical and cr
 TypeScript and SCSS to replicate the core gameplay: falling tetrominoes, line clearing, scoring, and increasing 
 difficulty. I focused on precise timing and grid-based logic, while keeping the codebase clean and modular. 
 AI-assisted tools helped speed up routine coding, but the game design, logic, and visual polish were entirely 
-my own. It was a deep dive into algorithmic thinking, collision detection, and UI responsiveness—all under 
+my own. It was a deep dive into algorithmic thinking, collision detection, and UI responsiveness-all under 
 a tight self-imposed deadline.`;
 
 const tetrisUrl = "/tetrisgame";
@@ -124,7 +124,13 @@ const pacmanTitle = "PacMan";
 
 const pacmanTechnologies = ["React", "TypeScript", "SCSS"];
 
-const pacmanDescription = `Still under construction, please wait a little more :)`;
+const pacmanDescription = `Developing this Pac-Man clone allowed me to explore real-time game dynamics 
+and autonomous behavior. Built using TypeScript and SCSS, the game features classic grid-based movement, 
+pellet consumption, a live game clock, and a custom chase AI for the ghost. I leveraged AI-assisted coding 
+to rapidly implement and debug the pathfinding mechanics, but I remained the architect of the project - managing 
+complex timing loops, preventing asynchronous state lag, and designing the modular overlay systems. It proved 
+to be a fantastic exercise in handling continuous real-time rendering, decoupling background interval loops 
+from user input, and achieving a polished retro aesthetic with modern SCSS styling.`;
 
 const pacmanUrl = "/pacmangame";
 
@@ -135,7 +141,7 @@ const PacMan: ProjectData = {
   projectTechnologies: pacmanTechnologies,
   projectUrl: pacmanUrl,
   isExternal: false,
-  buttonText: "Play PacMan NOW!",
+  buttonText: "Play Pac-Man NOW!",
 };
 
 // Colliers
@@ -145,10 +151,10 @@ const colliersTechnologies = ["Scrum", "Agile", "Power-BI", "MS Project", "MS Ex
 
 const colliersDescription = `My project management experience comes from leading large-scale construction 
 and real estate projects, where I deliver complex fit-outs under tight deadlines. I am responsible for 
-managing timelines, coordinating contractors, and keeping things moving—often while handling shifting 
+managing timelines, coordinating contractors, and keeping things moving-often while handling shifting 
 requirements and on-the-spot challenges. Working with cross-functional teams, I learned how to keep projects 
 on track, communicate clearly with stakeholders, and make quick decisions under pressure. I apply those same 
-skills in IT project management, where managing complexity, risk, and momentum is just as critical—while also 
+skills in IT project management, where managing complexity, risk, and momentum is just as critical-while also 
 streamlining processes using tools like Copilot to boost efficiency and support decision-making.`;
 
 const colliersUrl =

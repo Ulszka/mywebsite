@@ -3,7 +3,7 @@ import "./experience.scss";
 import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
 import freelancing from "../../assets/experience/freelancing_women.png";
-import fedex from "../../assets/experience/fedex_logo.png";
+import fedex from "../../assets/experience/fedex_logo2.png";
 // Technologies images
 import python from "../../assets/experience/technologies/python.png";
 import typescript from "../../assets/experience/technologies/typescript.png";
@@ -23,6 +23,8 @@ import confluence from "../../assets/experience/technologies/confluence.jfif";
 import sharepoint from "../../assets/experience/technologies/sharepoint.png";
 import copilot from "../../assets/experience/technologies/copilot.jpg";
 import QDM from "../../assets/experience/technologies/QDM.png";
+import bubble from "../../assets/experience/technologies/bubble.jpg";
+
 
 
 
@@ -55,6 +57,7 @@ const Experience = () => {
           <li>Creativity</li>
         </ul>
         <div className="job-skills-images">
+          <img src={bubble} alt="Bubble" />
           <img src={QDM} alt="QDM" />
           <img src={copilot} alt="Copilot" />
           <img src={sharepoint} alt="SharePoint" />

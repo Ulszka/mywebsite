@@ -68,7 +68,7 @@
     height: 32px;
     top: 4px;
     left: 4px;
-    z-index: 5;
+    z-index: 1;
   }
 
   .pacman {
@@ -107,7 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 20;
+    z-index: 2;
     backdrop-filter: blur(2px); // Subtle blurring effect on background components
 
     .status-window {

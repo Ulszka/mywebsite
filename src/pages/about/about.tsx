@@ -20,10 +20,11 @@ const About = () => {
   const hardSkills: string[] = [
     "MySQL",
     "Python",
+    "AI tools",
     "Power-BI",
     "Scrum",
     "MS Project",
-    "Microsoft Office",
+    "Microsoft 365",
     "MATLAB",
   ];
   const softSkills: string[] = [
@@ -42,10 +43,9 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hello there, I'm Ula — a passionate and empathetic Project Manager who brings both structure
-          and heart to every team I lead. With a strong foundation in construction project management
-          and a growing portfolio in IT and digital projects, I bridge the gap between people and
-          technology — making sure both thrive.
+          Hello there, I'm Ula - a passionate and empathetic Project Manager who brings both structure 
+          and heart to every team I lead. Focused on delivering complex IT and digital projects, 
+          I bridge the gap between people and technology to ensure workflows run smoothly.
         </p>
       </div>
       <Banner />
@@ -165,7 +165,9 @@ const About = () => {
         </div>
       </div>
 
-      <div id="languages-div">
+      
+
+<div id="languages-div">
         <h3>Languages</h3>
         <hr />
         <br />

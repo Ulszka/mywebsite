@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import SkillBox from "../../components/SkillBox/SkillBox";
 import HobbyList from "../../components/Hobby/HobbyList";
+import CertificatesList from "../../components/Certificates/CertificatesList";
 import "./about.scss";
 // Pictures
 import agh from "../../assets/experience/agh_logo.png";
@@ -16,6 +17,7 @@ const About = () => {
   const skillsSectionId = "skills-div";
   const educationSectionId = "education-div";
   const hobbiesSectionId = "hobbies-div";
+  const certificatesSectionId = "certificates-div";
 
   const hardSkills: string[] = [
     "MySQL",
@@ -43,7 +45,7 @@ const About = () => {
         <h3 className="about-title">About me</h3>
         <hr />
         <p className="about-introduction">
-          Hello there, I'm Ula - a passionate and empathetic Project Manager who brings both structure 
+          Hello there, I'm Ula - a passionate and data-driven Project Manager who brings both structure 
           and heart to every team I lead. Focused on delivering complex IT and digital projects, 
           I bridge the gap between people and technology to ensure workflows run smoothly.
         </p>
@@ -165,7 +167,13 @@ const About = () => {
         </div>
       </div>
 
+      <div id="certificates-div">
+        <h3>Certificates</h3>
+        <hr />
+        
+      <CertificatesList />
       
+      </div>
 
 <div id="languages-div">
         <h3>Languages</h3>
@@ -263,7 +271,6 @@ const About = () => {
               <li>Management</li>
             </ul>
           </div>
-          <div className="education-header"></div>
         </div>
       </div>
       <div id="hobbies-div">

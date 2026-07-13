@@ -246,4 +246,14 @@ $italianSKillLevel: 17%;
       padding: 0px $padding-sides;
     }
   }
+
+  #certificates-div {
+    @media (max-width: 648px) {
+      padding: 0px $padding-sides-mobile;
+    }
+
+    @media (min-width: 649px) {
+      padding: 0px $padding-sides;
+    }
+  }
 }

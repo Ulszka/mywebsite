@@ -4,6 +4,8 @@ import pacmanImg from "../../assets/my_projects/pacman.png";
 import websiteImg from "../../assets/my_projects/this_website.png";
 import froggersImg from "../../assets/my_projects/froggers.png";
 import colliersImg from "../../assets/experience/colliers_logo_clean.png";
+import freelancingImg from "../../assets/experience/freelancing_women.png";
+import fedexImg from "../../assets/experience/fedex_logo.png";
 
 
 export interface ProjectData {
@@ -169,6 +171,7 @@ const colliers: ProjectData = {
   isExternal: true,
   buttonText: "Premier Farnell",
 };
+
 
 // =====================================================================================================
 

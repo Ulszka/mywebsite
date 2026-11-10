@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Belleza');
 
 $color: #fffffe;
+$font-family: 'Belleza', sans-serif;
+
+:root {
+  --app-font: #{$font-family};
+}
 
 html, body {
   margin: 0;
-  font-family: Belleza !important;
+  font-family: var(--app-font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color;
@@ -16,11 +21,16 @@ html, body {
   position: relative;
 }
 
+* {
+  font-family: inherit;
+}
+
 code {
-  font-family: Belleza;
+  font-family: var(--app-font);
 }
 
 button {
+  font-family: var(--app-font);
   width: fit-content;
   height: fit-content;
   margin: 5px;

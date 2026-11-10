@@ -1,4 +1,5 @@
 $padding-about: 15px;
+$section-heading-padding-top: 20px;
 $padding-sides: 100px;
 $padding-sides-mobile: 20px;
 $project-link-color: #668F80;
@@ -12,10 +13,19 @@ $italianSKillLevel: 17%;
 
 .about-div {
   padding: 70px 0;
-  // height: 100%;
 
   .about-title {
     text-align: center;
+  }
+
+  #skills-div > h3,
+  #experience-div > h3,
+  #volunteering-div > h3,
+  #education-div > h3,
+  #certificates-div > h3,
+  #languages-div > h3,
+  #hobbies-div > h3 {
+    padding-top: $section-heading-padding-top;
   }
 
   #introduction-div {
@@ -53,17 +63,18 @@ $italianSKillLevel: 17%;
     }
 
     @media (max-width: 648px) {
-      .experience-job {
+      .timeline-job {
         padding-bottom: 20px;
       }
     }
 
     @media (min-width: 649px) {
-      .experience-jobs {
+      .timeline-jobs {
         display: flex;
+        flex-direction: row;
         justify-content: center;
 
-        .experience-job {
+        .timeline-job {
           flex-basis: 33%;
           padding: 0 20px;
         }
@@ -184,6 +195,7 @@ $italianSKillLevel: 17%;
 
   }
 
+  #volunteering-div,
   #education-div {
     @media (max-width: 648px) {
       padding: 0 $padding-sides-mobile;
@@ -193,46 +205,48 @@ $italianSKillLevel: 17%;
       padding: 0 $padding-sides;
     }
 
-    .education-image {
+    h5,
+    h6 {
+      font-weight: bolder;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    .timeline-image {
       width: 250px;
       height: 125px;
       object-fit: contain;
-    }
-
-    .education-header {
-      display: flex;
-      flex-direction: column;
+      padding-left: 30px;
       padding-bottom: $padding-about;
-
-      h6 {
-        font-size: 24px;
-        padding-right: $padding-about;
-        margin-bottom: 5px;
-      }
-
-      p {
-        margin: 0;
-      }
     }
 
     @media (min-width: 649px) {
-      .education-containers {
+      .timeline-jobs {
         display: flex;
+        justify-content: center;
 
-        .education-container {
-          flex-basis: 33%;
+        .timeline-job {
+          flex-basis: 50%;
           padding: 0 20px;
-
-          .education-header {
-            display: flex;
-          }
         }
       }
     }
 
     @media (max-width: 648px) {
-      .education-container {
+      .timeline-job {
         padding-bottom: 20px;
+      }
+    }
+  }
+
+  #education-div {
+    @media (min-width: 649px) {
+      .timeline-jobs {
+        .timeline-job {
+          flex-basis: 33%;
+        }
       }
     }
   }

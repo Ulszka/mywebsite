@@ -1,7 +1,7 @@
 import "./experience.scss";
 // Workplace logos
-import colliers from "../../assets/experience/colliers_logo_clean.png";
 import twojDev from "../../assets/experience/twoj_developer.png";
+import colliers from "../../assets/experience/colliers_logo_clean.png";
 import freelancing from "../../assets/experience/freelancing_women.png";
 import fedex from "../../assets/experience/fedex_logo2.png";
 // Technologies images
@@ -35,12 +35,13 @@ const Experience = () => {
       <hr />
 
       <img src={fedex} alt="FedEx" className="company-img" />
-      <h5>Project Lead / Solution Design and Implementation Specialist in FedEx 02/2026 - now</h5>
+      <h5>Project Lead / Solution Design and Implementation Specialist in FedEx 02/2026 - Present</h5>
       <p>
-        As a Project Lead, I specialize in guiding complex, multi-component projects from initial assessment to successful 
-        delivery. I collaborate closely with cross-functional teams—including Operations, Customer Experience, Pricing, 
-        Customs, IT, and Sales—to clarify project scope, align objectives, and ensure seamless execution. By analyzing 
-        customer needs and identifying gaps, I help design efficient, cost-effective solutions that meet business goals.
+        As a Project Lead, I coordinate customer migration projects as part of the integration of TNT into FedEx, 
+        guiding them from initial assessment through implementation. My role combines project management, business analysis, 
+        and solution design. I collaborate closely with cross-functional teams—including Operations, Customer Experience, 
+        Pricing, Customs, IT, and Sales—to analyze customer requirements, identify operational gaps, define project scope, 
+        and develop solutions that balance customer needs with FedEx's operational and technical capabilities.
       </p>
       <div className="jobskills">
         <ul>
@@ -48,13 +49,13 @@ const Experience = () => {
           <li>Quality Driven Management</li>
           <li>Copilot</li>
           <li>SharePoint</li>
-          <li>Power-BI</li> 
+          <li>Power BI</li> 
           <li>Organizational skills</li>
-          <li>Logical thinking</li>
-          <li>Responsibility</li>
-          <li>Timeliness</li>
-          <li>Quick learner</li>
-          <li>Creativity</li>
+          <li>Stakeholder Management</li>
+          <li>Project Planning</li>
+          <li>Gap Analysis</li>
+          <li>Solution Design</li>
+          <li>Analytical Thinking</li>
         </ul>
         <div className="job-skills-images">
           <img src={bubble} alt="Bubble" />
@@ -65,14 +66,14 @@ const Experience = () => {
         </div>
       </div>
       <p>
-        Throughout each project, I act as a trusted consultant to Sales and internal stakeholders, providing insights,
-         framing solutions, and applying project management tools to track and control all stages. I also lead project 
-         close-out reviews to capture lessons learned and drive continuous improvement.
-
-        {/* In my career, I’ve led diverse, cross-functional projects where I identified challenges, developed 
-        innovative solutions, and ensured timely execution. I combine strong analytical skills, business acumen, 
-        and adaptability to navigate changing priorities while delivering high-quality results that align with customer 
-        and organizational objectives. */}
+        Throughout each project, I manage dependencies, monitor progress and risks, and coordinate stakeholders 
+        to ensure that proposed solutions are successfully implemented. I support Sales and internal teams 
+        in evaluating solution feasibility and addressing challenges arising from the differences between 
+        TNT and FedEx systems and processes.
+        My role also gives me exposure to technical integrations, data mapping, and implementation testing, 
+        allowing me to better understand the technical dependencies behind business solutions. By combining 
+        analytical thinking with structured project management, I help translate complex business requirements 
+        into practical solutions while balancing customer expectations with operational constraints.
       </p>
       <hr className="experience-spacer" />
       <br />

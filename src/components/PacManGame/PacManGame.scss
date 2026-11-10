@@ -1,6 +1,6 @@
 .pacman-game {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: inherit;
   padding: 20px;
   color: #fff;
   user-select: none;
@@ -14,8 +14,7 @@
     font-weight: bold;
     letter-spacing: 1px;
   }
-
-  // Anchor structure container for relative bounding contexts
+  
   .board-wrapper {
     position: relative;
     margin: 0 auto;
@@ -94,9 +93,6 @@
     &::after { right: 6px; }
   }
 
-  // ------------------------------------------------------------------------
-  // Cleaned pop-up style definitions (No whole screen blackout)
-  // ------------------------------------------------------------------------
   .status-overlay {
     position: absolute;
     top: 0;

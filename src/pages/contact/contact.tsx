@@ -1,6 +1,5 @@
-import React from "react";
 import "./contact.scss";
-import profilePhoto from "../../assets/my_pictures/chosen/hippoGhibli.png"; // adjust path if needed
+import profilePhoto from "../../assets/my_pictures/chosen/hippoGhibli.png";
 
 const Contact = () => {
   return (

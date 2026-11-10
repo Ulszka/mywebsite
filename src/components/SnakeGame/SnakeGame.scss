@@ -1,10 +1,10 @@
-$font: "Monaco", monospace;
+$font: var(--app-font);
 
 .snake-game-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: sans-serif;
+  font-family: inherit;
   padding-top: 70px;
 
   .title {
@@ -45,8 +45,8 @@ $font: "Monaco", monospace;
 
   /* ADD FRAME */
   border: 5px solid #333; // Dark solid frame
-  border-radius: 8px; // Rounded corners (optional)
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // Optional: nice shadow
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .cell {

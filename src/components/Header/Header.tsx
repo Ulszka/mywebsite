@@ -2,7 +2,6 @@ import { useState } from "react";
 import { BrowserRouter as Route, NavLink } from "react-router-dom";
 import CloseMenu from "../../assets/x.svg?react";
 import MenuIcon from "../../assets/menu.svg?react";
-import RouterConfig from "../../RouterConfig";
 import logo from "../../assets/logo/favicon.png"
 import "./Header.scss";
 

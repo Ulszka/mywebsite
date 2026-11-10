@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import projects from "./ProjectData";
 import SkillBox from "../../components/SkillBox/SkillBox";
-import git from "../../assets/my_projects/git.png";
 import "./project.scss";
 
 const Project = () => {

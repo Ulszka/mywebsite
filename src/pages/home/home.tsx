@@ -25,7 +25,7 @@ const Home = () => {
           </div>
           <ul className="home-key-points">
             <li>4+ years in IT project management</li>
-            <li>Managed €1.2M+ budgets</li>
+            <li>Managed €1.5M+ budgets</li>
             
           </ul>
         </div>
